@@ -436,7 +436,21 @@ figcaption {
   margin-right: 0;
 }
 
-.margin-bottom, .margin-bottom.margin-xxlarge, .margin-bottom.margin-medium, .margin-bottom.margin-custom3, .margin-bottom.margin-custom1, .margin-bottom.margin-tiny, .margin-bottom.margin-small {
+.margin-bottom {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom.margin-xxlarge {
+  flex: 0 auto;
+  align-self: auto;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom.margin-medium, .margin-bottom.margin-custom3, .margin-bottom.margin-custom1, .margin-bottom.margin-tiny, .margin-bottom.margin-small {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -809,6 +823,7 @@ figcaption {
   border-color: var(--white);
   color: var(--white);
   background-color: rgba(0, 0, 0, 0);
+  position: static;
 }
 
 .button.is-small {
@@ -1039,6 +1054,7 @@ figcaption {
 
 .button-group.is-center {
   justify-content: center;
+  position: static;
 }
 
 .text-color-white {
@@ -1203,7 +1219,9 @@ figcaption {
 }
 
 .text-align-center {
+  height: auto;
   text-align: center;
+  display: block;
 }
 
 .text-size-small {
@@ -1367,6 +1385,7 @@ figcaption {
 .padding-section-large {
   padding-top: 7rem;
   padding-bottom: 0;
+  display: flex;
 }
 
 .spacer-tiny {
@@ -1671,6 +1690,8 @@ figcaption {
   background-color: rgba(0, 0, 0, 0);
   padding-bottom: 6rem;
   position: relative;
+  left: auto;
+  overflow: visible;
 }
 
 .home_4_portfolio-list_image {
@@ -1688,6 +1709,7 @@ figcaption {
   border-radius: 0;
   padding-right: 2rem;
   font-size: 1rem;
+  overflow: visible;
 }
 
 .home_4_portfolio-list_mask {
@@ -1737,6 +1759,7 @@ figcaption {
 
 .home_4_portfolio-list_arrow.left {
   background-color: #222020;
+  left: auto;
   right: 4rem;
 }
 
@@ -2326,6 +2349,164 @@ figcaption {
   padding-bottom: 0;
 }
 
+.text-block-4 {
+  color: var(--black);
+}
+
+.div-block-2, .div-block-3 {
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+}
+
+.button-2 {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.div-block-4 {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  top: 180px;
+  bottom: 0;
+  left: 421px;
+}
+
+.button-3 {
+  background-color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.div-block-5 {
+  z-index: 1;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  top: 180px;
+  left: 420px;
+}
+
+.button-4 {
+  background-color: var(--black);
+}
+
+.home_4_portfolio-list_component-copy {
+  width: 1112px;
+  height: 490px;
+  float: none;
+  clear: both;
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 6rem;
+  position: relative;
+  left: 500px;
+  overflow: visible;
+}
+
+.home_4_portfolio-list_slide-nav-copy {
+  height: 1.75rem;
+  font-size: .5rem;
+  top: auto;
+  bottom: 0%;
+  left: -21%;
+  right: auto;
+}
+
+.margin-bottom-copy {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom-copy.margin-xxlarge {
+  flex-flow: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+
+.margin-bottom-copy.margin-medium, .margin-bottom-copy.margin-custom3, .margin-bottom-copy.margin-custom1, .margin-bottom-copy.margin-tiny, .margin-bottom-copy.margin-small {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom-copy.margin-large {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+}
+
+.margin-bottom-copy.margin-0, .margin-bottom-copy.margin-xlarge, .margin-bottom-copy.margin-xhuge, .margin-bottom-copy.margin-xxhuge, .margin-bottom-copy.margin-huge, .margin-bottom-copy.margin-xxsmall, .margin-bottom-copy.margin-custom2 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-bottom-copy.margin-xsmall {
+  width: 305px;
+  background-color: var(--white);
+  border-radius: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home_4_portfolio-list_arrow-copy {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--black);
+  background-color: #222020;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.home_4_portfolio-list_arrow-copy.left {
+  background-color: #222020;
+  left: auto;
+  right: 4rem;
+}
+
+.home_4_portfolio-list_arrow-copy {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--black);
+  background-color: #222020;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.home_4_portfolio-list_arrow-copy.left {
+  background-color: #222020;
+  left: auto;
+  right: 4rem;
+}
+
+.padding-section-large-copy-copy {
+  padding-top: 7rem;
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -2752,6 +2933,22 @@ figcaption {
   }
 
   .padding-section-large-copy2, .padding-section-large-copy, .padding-section-large-copy, .padding-section-large-copy-copy {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .home_4_portfolio-list_component-copy {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .margin-bottom-copy {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .padding-section-large-copy-copy {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
@@ -3192,6 +3389,21 @@ figcaption {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
+  .margin-bottom-copy {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home_4_portfolio-list_arrow-copy.left {
+    right: 3.5rem;
+  }
+
+  .padding-section-large-copy-copy {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3328,6 +3540,13 @@ figcaption {
 
   .home_4_portfolio-list_mask {
     width: 95%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .home_4_portfolio-list_arrow {
+    left: 25px;
   }
 
   .home_5_faq_component {
@@ -3372,6 +3591,20 @@ figcaption {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .home_4_portfolio-list_component-copy {
+    left: 0;
+  }
+
+  .margin-bottom-copy {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home_4_portfolio-list_arrow-copy {
+    left: 25px;
   }
 }
 
