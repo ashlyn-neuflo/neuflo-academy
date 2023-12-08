@@ -2344,7 +2344,13 @@ figcaption {
   padding-bottom: 0;
 }
 
-.padding-section-large-copy, .padding-section-large-copy-copy {
+.padding-section-large-copy {
+  border-top-color: rgba(255, 255, 255, .26);
+  padding-top: 7rem;
+  padding-bottom: 0;
+}
+
+.padding-section-large-copy-copy {
   padding-top: 7rem;
   padding-bottom: 0;
 }
@@ -2505,6 +2511,10 @@ figcaption {
 .padding-section-large-copy-copy {
   padding-top: 7rem;
   padding-bottom: 0;
+}
+
+.text-block-5 {
+  padding-bottom: 6px;
 }
 
 @media screen and (max-width: 991px) {
