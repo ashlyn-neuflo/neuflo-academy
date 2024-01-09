@@ -819,11 +819,19 @@ figcaption {
   border-radius: 4px;
 }
 
+.button.is-secondary.w--current {
+  margin-top: 30px;
+}
+
 .button.is-secondary.is-alternate {
   border-color: var(--white);
   color: var(--white);
   background-color: rgba(0, 0, 0, 0);
   position: static;
+}
+
+.button.is-secondary.is-small {
+  margin-top: 30px;
 }
 
 .button.is-small {
@@ -3624,10 +3632,6 @@ figcaption {
 
 #w-node-_84a759a5-988e-0538-fe66-069972dd32d6-4aa149d6 {
   justify-self: end;
-}
-
-#w-node-_84a759a5-988e-0538-fe66-069972dd3525-4aa149d6 {
-  justify-self: start;
 }
 
 #w-node-_84a759a5-988e-0538-fe66-069972dd355b-4aa149d6 {
